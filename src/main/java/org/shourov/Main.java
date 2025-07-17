@@ -11,6 +11,8 @@ public class Main {
 //        byteStreamExample.absolutePathFileExample();
 //        byteStreamExample.rootDirectoryFileOutputExample();
 //        CharacterStreamExample.fileReaderExample();
-        CharacterStreamExample.fileWriterExample();
+//        CharacterStreamExample.fileWriterExample();
+//        BufferedStreamExample.readExample();
+        BufferedStreamExample.writeExample();
     }
 }
