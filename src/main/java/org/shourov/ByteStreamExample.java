@@ -1,9 +1,6 @@
 package org.shourov;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 public class ByteStreamExample {
     public void rootDirectoryFileExample() {
@@ -37,6 +34,15 @@ public class ByteStreamExample {
             while((data = fis.read()) != -1) {
                 System.out.print((char) data);
             }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void rootDirectoryFileOutputExample() {
+        String text = "This is paragraph 4..";
+        try (FileOutputStream fos = new FileOutputStream("paragraph4.txt")) {
+            fos.write(text.getBytes());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

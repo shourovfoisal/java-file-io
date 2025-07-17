@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
 //        byteStreamExample.rootDirectoryFileExample();
 //        byteStreamExample.resourcesDirectoryFileExample();
-        byteStreamExample.absolutePathFileExample();
+//        byteStreamExample.absolutePathFileExample();
+        byteStreamExample.rootDirectoryFileOutputExample();
     }
 }
